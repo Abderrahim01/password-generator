@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Master Password</title>
+
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <link rel="stylesheet" href="src/css/style.css">
+      <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+  </head>
+  <body class="app-box">
+    <header class="container-fluid">
+        <h1>Master Code Application</h1>
+    </header>
+  <div class="app-inner">
+      <ul class="tabs-menu">
+        <li class="current"><a>Password Generator</a></li>
+      </ul>
+      <div id="tab-1" class="tab-content generator">
+        <div class="password-here">
+          <input type="password" value="" placeholder="Master Password" id="mdp_master" required>
+        </div>
+        <div class="num-char">
+          <div>Numbers of characters</div>
+          <div class="num-conrols">
+            <input type="text" id="num_char" value="16" maxlength="2" min="12" required>
+          </div>
+        </div>
+
+        <div class="gen-opt">
+		 <div class="item-opt">
+            <label for="opt1">Identifiant</b>
+              <input type="text" class="idinput "id="ident" name="opt1" required/>
+              <span></span>
+            </label>
+          </div>
+
+          <div class="gen-opt">
+		 <div class="item-opt">
+            <label for="opt1">Plafteform</b>
+              <input type="text" class="idinput "id="platform" name="opt1" required/>
+
+            </label>
+          </div>
+
+        <div class="action">
+          <a href="#" class="btn green" id="genbutton">Generate</a>
+        </div>
+      </div>
+
+                    <div class="gen-opt">
+		 <div class="item-opt">
+            <label for="opt1">mot de passe :</b>
+             <span id="mdp"></span>
+              <span></span>
+            </label>
+          </div>
+
+    </div>
+  </div>
+
+    <script src="src/js/jquery.1.11.2.min.js"></script>
+  <script src="src/js/window.js"></script>
+  <script>
+    require('./renderer.js');
+</script>
+  </body>
+</html>
